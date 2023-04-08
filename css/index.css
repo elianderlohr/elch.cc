@@ -186,7 +186,7 @@ body {
   z-index: 1000;
 }
 
-@media screen and (min-width:575px) and (max-width: 1200px) {
+@media screen and (min-width:575px) and (max-width: 1015px) {
   #about-container {
     min-height: 180px;
   }

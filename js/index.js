@@ -43,8 +43,8 @@ TxtType.prototype.tick = function () {
 };
 
 var image = new Image();
-      image.src = "assets/elch_black.gif?v=<?php echo date('Hmisd'); ?>";
-      $(".elch-black-gif").attr("src", image.src);
+image.src = "assets/elch_black.gif?v=<?php echo date('Hmisd'); ?>";
+$(".elch-black-gif").attr("src", image.src);
 
 window.onload = function () {
   var elements = document.getElementsByClassName("typewrite");
@@ -85,8 +85,8 @@ window.addEventListener("scroll", function () {
     didCollapse = true;
 
     let box = document.querySelector("#info");
-    
-    box.classList.toggle('fade');
+
+    box.classList.toggle("fade");
   }
 
   didScroll = true;

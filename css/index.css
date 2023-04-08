@@ -174,3 +174,14 @@ body {
         transform: translateY(33px);
     }
 }
+
+/* ELCH ANIMATION */
+.preloader {
+  position: fixed;
+  background: black;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}

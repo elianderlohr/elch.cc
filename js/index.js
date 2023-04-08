@@ -42,6 +42,10 @@ TxtType.prototype.tick = function () {
   }, delta);
 };
 
+var image = new Image();
+      image.src = "assets/elch_black.gif?v=<?php echo date('Hmisd'); ?>";
+      $(".elch-black-gif").attr("src", image.src);
+
 window.onload = function () {
   var elements = document.getElementsByClassName("typewrite");
   for (var i = 0; i < elements.length; i++) {
@@ -56,7 +60,13 @@ window.onload = function () {
   css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
+
+  setTimeout(launchSite, 3000);
 };
+
+function launchSite() {
+  $(".preloader").fadeOut("slow", function () {});
+}
 
 function wave() {
   var hand = document.getElementById("hand");

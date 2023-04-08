@@ -61,7 +61,7 @@ window.onload = function () {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 
-  setTimeout(launchSite, 100); //TODO: change to 3000
+  setTimeout(launchSite, 1700);
 };
 
 function launchSite() {

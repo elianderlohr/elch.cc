@@ -7,21 +7,20 @@ body {
 }
 
 #main {
-    min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
 }
 
-
- #scroll-icon {
-    opacity: 1;
-    -webkit-transition: opacity 10s ease-in-out;
-    -moz-transition: opacity 10s ease-in-out;
-    -ms-transition: opacity 10s ease-in-out;
-    -o-transition: opacity 10s ease-in-out;
-    transition: opacity 10 ease-in-out;
-  }
-  #scroll-icon.fade {
-    opacity:0;
-  }
+#scroll-icon {
+  opacity: 1;
+  -webkit-transition: opacity 10s ease-in-out;
+  -moz-transition: opacity 10s ease-in-out;
+  -ms-transition: opacity 10s ease-in-out;
+  -o-transition: opacity 10s ease-in-out;
+  transition: opacity 10 ease-in-out;
+}
+#scroll-icon.fade {
+  opacity: 0;
+}
 
 .bold {
   font-weight: 700;
@@ -87,18 +86,43 @@ body {
 .deer-button {
   background-color: wheat;
   color: wheat;
-  padding: 5px;
+  padding: 4px;
   border-radius: 30%;
   margin-left: 30px;
+  box-shadow: none;
 }
 
-.btn:hover {
-  color: wheat !important;
+.deer-button:hover {
+  background-color: #f55845;
+  color: #f55845;
+  text-decoration: none;
+}
+.deer-button:active  {
+  background-color: #f55845;
+  color: #f55845;
+  text-decoration: none;
+}
+.deer-button:focus {
+  background-color: #f55845;
+  color: #f55845;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f55845;
+  text-decoration: none;
+}
+a:active  {
+  color: #f55845;
+  text-decoration: none;
+}
+a:focus {
+  color: #f55845;
   text-decoration: none;
 }
 
 .a:hover {
-    background-color: #f55845;
+  background-color: #f55845;
 }
 
 .container {
@@ -124,20 +148,17 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #a8bbbf;
-  }
-
+  background-color: #a8bbbf;
+}
 
 /* SCROLL ANIMATION */
 .icon-scroll,
-.icon-scroll:before
-{
-    position: absolute;
-    left: 50%;
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
 }
 
-.icon-scroll
-{
+.icon-scroll {
   width: 30px;
   height: 50px;
   margin-left: -20px;
@@ -147,32 +168,27 @@ body {
   border-radius: 25px;
 }
 
-.icon-scroll:before
-{
-    content: '';
-    width: 8px;
-    height: 8px;
-    background: #fff;
-    margin-left: -4px;
-    top: 8px;
-    border-radius: 4px;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-name: scroll;
+.icon-scroll:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
 }
-  
 
-@keyframes scroll
-{
-    0%
-    {
-        opacity: 1;
-    }
-    100%
-    {
-        opacity: 0;
-        transform: translateY(33px);
-    }
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(33px);
+  }
 }
 
 /* ELCH ANIMATION */
@@ -190,7 +206,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width:575px) and (max-width: 1015px) {
+@media screen and (min-width: 575px) and (max-width: 1015px) {
   #about-container {
     min-height: 180px;
   }

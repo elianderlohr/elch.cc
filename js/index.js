@@ -68,14 +68,6 @@ function launchSite() {
   $(".preloader").fadeOut("slow", function () {});
 }
 
-function wave() {
-  var hand = document.getElementById("hand");
-  hand.offsetHeight; /* trigger reflow */
-  hand.style.animation = null;
-}
-
-setInterval(wave, 5000); /* wave every 5 seconds */
-
 let didScroll = false;
 
 let didCollapse = false;
